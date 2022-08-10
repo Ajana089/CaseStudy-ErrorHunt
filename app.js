@@ -1,6 +1,6 @@
 const express = require('express'); 
 const path = require ('path'); 
-const bodyParser=require('body-parser');
+const bodyParser=require('body-parser');//added bodyparser 
 const cors = require('cors');
 
 const nav= [
@@ -24,7 +24,7 @@ const nav= [
 
 const loginRouter = require('./src/routes/loginroute');
 const signupRouter = require('./src/routes/signuproute');
-const homeRouter = require('./src/routes/homerouter');
+const homeRouter = require('./src/routes/homerouter');//change the path n correct the location of the folder
 const booksRouter = require('./src/routes/booksroute');
 const authorsRouter = require('./src/routes/authorsroute');
 

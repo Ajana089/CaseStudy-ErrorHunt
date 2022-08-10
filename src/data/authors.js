@@ -45,4 +45,4 @@ var authors =
 
 ]
 
-module.exports = authors;
+module.exports = authors;//change the name from author to authors
