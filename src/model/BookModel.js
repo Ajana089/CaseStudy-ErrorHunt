@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
 //mongoose.connect('mongodb://localhost:27017/Library');
-mongoose.connect('mongodb://mongodb+srv://ajana:<I1wNLanidBwGSWxk>@cluster0.qh8z9se.mongodb.net/?retryWrites=true&w=majority/Library');
+mongoose.connect('mongodb+srv://ajana:3yzYAMNfN8SNdgSO@cluster0.gibs8pa.mongodb.net/Library?retryWrites=true&w=majority');
+//mongoose.connect('mongodb+srv://ajana:3yzYAMNfN8SNdgSO@cluster0.gibs8pa.mongodb.net/Library?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const Schema = mongoose.Schema;
-
-
 const BookSchema = new Schema({
     title : String,
     author: String,
