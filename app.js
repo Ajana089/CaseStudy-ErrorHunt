@@ -26,7 +26,7 @@ app.use('/signup',signupRouter);
 app.use('/home',homeRouter); 
 app.use('/books',booksRouter); 
 app.use('/authors',authorsRouter); 
-app.use(cors);
+app.use(cors());
 
 
 
@@ -40,7 +40,7 @@ app.get('/',function(req,res){
 
 
 
-app.listen(5000,()=>{
-    console.log("Server Ready on 5000");
-});
-//app.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 5000, () => {
+    console.log("Server Ready on 5000"); 
+  });
+  
